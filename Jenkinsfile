@@ -10,7 +10,7 @@ pipeline {
      stage('Install Maven Build Tool') {
             steps { 
                 sh 'wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz'
-                sh 'tar -xzvf /var/lib/jenkins/workspace/test/apache-maven-3.9.4-bin.tar.gz'
+                sh 'tar -xzvf /var/lib/jenkins/workspace/AddressBook/apache-maven-3.9.4-bin.tar.gz'
              } 
            }
      stage('Compile Sample Application') {
