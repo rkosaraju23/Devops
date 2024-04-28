@@ -16,21 +16,21 @@ pipeline {
      stage('Compile Sample Application') {
             steps {
                 dir('/var/lib/jenkins/workspace/test/addressbook/addressbook_main'){
-                sh '/var/lib/jenkins/workspace/test/apache-maven-3.9.4/bin/mvn compile'
+                sh '/var/lib/jenkins/workspace/AddressBook/apache-maven-3.9.4/bin/mvn compile'
             }
            }
         }
     stage('Test Sample Application') {
             steps {
                 dir('/var/lib/jenkins/workspace/test/addressbook/addressbook_main'){
-                sh '/var/lib/jenkins/workspace/test/apache-maven-3.9.4/bin/mvn test'
+                sh '/var/lib/jenkins/workspace/AddressBook/apache-maven-3.9.4/bin/mvn test'
             }
            }
         }
      stage('Package Sample Application') {
             steps {
                 dir('/var/lib/jenkins/workspace/test/addressbook/addressbook_main'){
-                sh '/var/lib/jenkins/workspace/test/apache-maven-3.9.4/bin/mvn package'
+                sh '/var/lib/jenkins/workspace/AddressBook/apache-maven-3.9.4/bin/mvn package'
             }
            }
         }
